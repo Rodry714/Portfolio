@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+/>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      html, body {
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+      }
+      body {
+        box-sizing: border-box;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      /* Ajuste para evitar desbordamiento en contenedores principales */
+      .section__container,
+      .container,
+      .about,
+      .portfolio,
+      .contact-section,
+      .cards {
+        width: 100%;
+        max-width: 100vw;
+        margin: 0 auto;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Rigoberto´s Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">Rigoberto</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Acerca de mi</a></li>
+          <li><a href="#experiencia">Experiencia y habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="home" class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>Rigoberto<br />a</span> Web Developer
+          </h1>
+          <p class="description">
+            ¡Hola toditos y bienvenidos a mi portafolio! Aquí encontrarás un resumen de mis experiencias y habilidades que me convierten en un elemento valioso para tu empresa o proyecto. Soy un apasionado de la tecnología, con gran interés en aprender y crecer constantemente. Me caracteriza la capacidad de construir relaciones interpersonales sólidas y aportar al trabajo en equipo, siempre priorizando la comunicación como la base para alcanzar grandes resultados.
+          </p>
+          <div class="action__btns">
+            <button class="hire__me">Contacto</button>
+            <button class="portfolio-home">Curriculum</button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="assets/Coding.gif" alt="profile" class="main-gif" />
+          <img src="assets/foto.png" alt="profile" class="main-foto" style="display: none;" />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <img src="assets/foto.png" alt="">
+      <div class="about-info">
+        <h2>Un poco sobre mi</h2>
+        <div class="divider"></div>
+        <p>Soy un joven profesional apasionado por la tecnología y el aprendizaje constante. Me caracterizo por mi liderazgo y capacidad para trabajar en equipo, construyendo relaciones basadas en la comunicación y la confianza. A lo largo de mis experiencias en servicio al cliente, proyectos tecnológicos y voluntariados, he desarrollado habilidades para resolver problemas de manera creativa, adaptarme a distintos entornos y mantener un alto compromiso con los objetivos. Mi formación y certificaciones en tecnología refuerzan mi perfil, combinando la parte técnica con la habilidad de conectar con las personas y aportar valor en cada proyecto.</p>
+      </div>
+    </section>
+    
+    <section id="experiencia" class="cards" style="background-color: #191c32; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 4rem; padding-bottom: 4rem;">
+      <div class="flex justify-center mb-12 pb-8 gap-4 tab-buttons-responsive" style="flex-wrap: wrap;">
+        <button onclick="showTab('experiencias')" id="tab-experiencias"
+          class="px-7 py-4 text-lg bg-purple-700 text-white font-semibold hover:bg-purple-600 transition"
+          style="border-radius: 20px; transform: scale();">
+          Experiencias Laborales
+        </button>
+        <button onclick="showTab('certificaciones')" id="tab-certificaciones"
+          class="px-7 py-4 text-lg bg-gray-800 text-gray-300 font-semibold hover:bg-purple-600 transition"
+          style="border-radius: 20px; transform: scale();">
+          Certificaciones
+        </button>
+        <button onclick="showTab('habilidades')" id="tab-habilidades"
+          class="px-7 py-4 text-lg bg-gray-800 text-gray-300 font-semibold hover:bg-purple-600 transition"
+          style="border-radius: 20px; transform: scale();">
+          Habilidades
+        </button>
+        <button onclick="showTab('logros')" id="tab-logros"
+          class="px-7 py-4 text-lg bg-gray-800 text-gray-300 font-semibold hover:bg-purple-600 transition"
+          style="border-radius: 20px; transform: scale();">
+          Logros
+        </button>
+      </div>
+      <div class="container mx-auto px-6 text-center flex-1 flex flex-col justify-center w-full h-full">
+   
+        <!-- Contenido -->
+        <div id="experiencias" class="tab-content flex justify-center items-center w-full h-full" style="min-height: 400px;">
+          <!-- Card Ejemplo -->
+          <div class="container">
+              <div class="experiencia" style="display: flex;">
+                <div class="padding-e">
+                  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                      <img class="rounded-t-lg" src="assets/siman.webp" alt="" />
+                    </a>
+                    <div class="p-5 w-58 mx-auto">
+                      <a href="https://www.siman.com/">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Siman / Vendedor</h5>
+                      </a>
+                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Colaborador en tallaje de calzado, atención personalizada al cliente, seguimiento de facturas, redacción de borradores y cumplimiento de metas <br> 13 Nov 23 - 31 May 25</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="padding-e">
+                  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                      <img class="rounded-t-lg" src="assets/concentrix.png" alt="" />
+                    </a>
+                    <div class="p-5 w-69 mx-auto">
+                      <a href="https://www.concentrix.com/">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Servicio al cliente / JetBlue</h5>
+                      </a>
+                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Me encuentraba al servicio del cliente de la grandiosa aerolinea aerea de jetBlue como servicio al cliente bilingüe ,mi rol como crewmember es solventar las dudas que puedan presentarse ,siendo de gran aporte para los clientes sobre sus intereses <br> 03 jun 24 - 07 sept 24. </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="padding-e">
+                  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                      <img class="rounded-t-lg" src="assets/telus.png" alt="" />
+                    </a>
+                    <div class="p-5 w-78 mx-auto">
+                      <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Servicio al cliente / Walmart y Moderador de contenido en Roblox</h5>
+                      </a>
+                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Actualmente trabajo en moderación de entornos en línea, fomentando comunidades saludables, seguras y productivas. Mi labor consiste en aplicar pautas claras, proteger a los usuarios y promover la colaboración. Ha sido la mejor experiencia laboral que he tenido. <br> 09 sept 24 - Actualidad.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="certificaciones" class="tab-content hidden flex justify-center items-center w-full h-full" style="min-height: 400px;">
+          <!-- Certificaciones -->
+          <div class="container skills-principal">
+              <div class="skills" style="display: flex;">
+                <div class="padding-e">
+                  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 ">
+                    <a href="#">
+                      <img class="rounded-t-lg w-80 mx-auto" src="assets/ITS.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="padding-e">
+                  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700" >
+                    <a href="#">
+                      <img class="rounded-t-lg  w-60 mx-auto" src="assets/mos.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="padding-e">
+                  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                      <img class="rounded-t-lg w-90 mx-auto" src="assets/TOEIC.webp" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="habilidades" class="tab-content hidden flex justify-center items-center w-full h-full" style="min-height: 400px;">
+          <!-- Skills -->
+           <div class="container mx-auto px-6 text-center">
+          <!-- Grid de Skills -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+            <!-- Card Skill -->
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-12 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">HTML</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="w-12 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">CSS</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-12 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">JavaScript</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind" class="w-12 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">Tailwind CSS</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="w-12 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">Bootstrap</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue" class="w-12 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">Vue</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-12 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">GitHub</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="assets/office-365-1.svg" alt="Office 365" class="w-52 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">Office 365</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="w-10 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">Figma</p>
+            </div>
+            <!-- Laravel -->
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="assets/laravel_logo_icon_170314.svg" alt="Laravel" class="w-28 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">Laravel</p>
+            </div>
+            <!-- Team Work -->
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Team Work" class="w-12 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">Trabajo en equipo</p>
+            </div>
+            <!-- Liderazgo -->
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Liderazgo" class="w-12 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">Liderazgo</p>
+            </div>
+            <!-- Solucionador de Problemas -->
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="https://cdn-icons-png.flaticon.com/512/3534/3534060.png" alt="Problem Solving" class="w-12 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">Solucionador de Problemas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="logros" class="tab-content hidden flex justify-center items-center w-full h-full" style="min-height: 400px;">
+        <div class="padding-e">
+          <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700" style="margin: 0 auto;">
+            <a href="https://www.laprensagrafica.com/economia/Estudiantes-de-Superate-incursionan-en-la-programacion-20231119-0048.html" target="_blank">
+              <img class="rounded-t-lg" src="https://www.laprensagrafica.com/__export/1700450800741/sites/prensagrafica/img/2023/11/19/20231119_082830387_fecm16112023coradelan03.jpg_554688467.jpg" alt="Logro" style="width: 320px; height: 240px; object-fit: cover;"/>
+            </a>
+            <div class="p-5 w-58 mx-auto">
+              <a href="https://www.laprensagrafica.com/economia/Estudiantes-de-Superate-incursionan-en-la-programacion-20231119-0048.html" target="_blank">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Expo Tech 2023</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">La experiencia en Expo Tech fue realmente especial, no solo desde la perspectiva de desarrollador de la plataforma, sino también porque marcó una etapa muy importante en mi vida. Me ayudó a crecer tanto a nivel personal como profesional, impulsándome a seguir desarrollándome en este ámbito</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function showTab(tabId) {
+        // ocultar todo
+        document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+        // mostrar la seleccionada
+        document.getElementById(tabId).classList.remove('hidden');
+
+        // cambiar estilos a tabs
+        document.querySelectorAll('button').forEach(btn => {
+          btn.classList.remove('bg-purple-700', 'text-white');
+          btn.classList.add('bg-gray-800', 'text-gray-300');
+        });
+
+        document.getElementById("tab-" + tabId).classList.add('bg-purple-700', 'text-white');
+        document.getElementById("tab-" + tabId).classList.remove('bg-gray-800', 'text-gray-300');
+      }
+    </script>
+
+
+    <section id="contacto" class="form" style="background-color: #ffff;">
+      <div class="flex flex-col items-center justify-center text-center w-full" style="padding-top: 30px;">
+        <h1 class="mb-4 text-3xl font-extrabold text-black md:text-5xl lg:text-6xl w-full text-center">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Te interesa lo que </span> Hago?
+        </h1>
+        <p class="text-lg font-normal text-black lg:text-xl w-full text-center">
+          Aqui dejare un formulario para que me puedas contactar cuando gustes
+        </p>
+      </div>
+      <div class="max-w-7xl w-full rounded-2xl shadow-lg grid grid-cols-1 md:grid-cols-2 bg-white text-black min-h-[70vh] mx-auto items-center justify-center place-items-center">
+        <!-- LADO IZQUIERDO -->
+        <div class="p-10">
+          <div class="pendiente" style="padding-left: 15px;">
+          <h2 class="text-3xl font-bold mb-4">Estare pendiente a tu respuesta </h2>
+          <p class="text-gray-700 mb-8">
+            Si te interesa conocer más sobre mis habilidades y cómo puedo aportar a tu proyecto, estaré encantado de comunicarme contigo y construir juntos algo increíble.
+          </p>
+          </div>
+          <ul class="space-y-6 text-gray-800">
+            <li class="flex items-start space-x-3">
+              <!-- Icono edificio -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21h18M9 8h6M9 12h6m-9 4h6m7 5V5a2 2 0 00-2-2H8a2 2 0 00-2 2v16" />
+              </svg>
+              <div>
+                <p>Santa tecla</p>
+                <p>La libertad</p>
+              </div>
+            </li>
+            <li class="flex items-center space-x-3">
+              <!-- Icono teléfono -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3l2 5-2 1a11 11 0 006 6l1-2 5 2v3a2 2 0 01-2 2h-1c-8.284 0-15-6.716-15-15V5z" />
+              </svg>
+              <p>(+503) 7568-3732</p>
+            </li>
+            <li class="flex items-center space-x-3">
+              <!-- Icono correo -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0l-4-4m4 4l-4 4m12-4h4M8 12h12" />
+              </svg>
+              <p>rodrigomartoquin8@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+        <!-- LADO DERECHO (FORMULARIO) -->
+        <div class="p-10 flex items-center justify-center" style="padding-right: 15px;">
+          <form class="space-y-6 w-full" action="https://formspree.io/f/xgvlqgwz" method="POST">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium mb-1">Primer Nombre</label>
+                <input type="text" name="primer_nombre" required class="w-full rounded-lg bg-gray-100 border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black">
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1">Apellido</label>
+                <input type="text" name="apellido" required class="w-full rounded-lg bg-gray-100 border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black">
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Correo</label>
+              <input type="email" name="email" required class="w-full rounded-lg bg-gray-100 border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Numero de telefono</label>
+              <input type="text" name="telefono" class="w-full rounded-lg bg-gray-100 border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Mensaje</label>
+              <textarea rows="4" name="mensaje" required class="w-full rounded-lg bg-gray-100 border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-black"></textarea>
+            </div>
+            <button type="submit" class="px-6 py-2 bg-indigo-500 hover:bg-indigo-600 rounded-lg font-medium text-white" value="Enviar" style="border-radius: 10px;">
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="rounded-lg shadow-sm m-4" style="background-color: #191c32;">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="#home" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Rigoberto</span>
+          </a>
+          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+            <li><a href="#home" class="hover:underline me-4 md:me-6">Home</a></li>
+            <li><a href="#about" class="hover:underline me-4 md:me-6">Acerca de mi</a></li>
+            <li><a href="#experiencia" class="hover:underline me-4 md:me-6">Experiencia y habilidades</a></li>
+            <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+          </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://flowbite.com/" class="hover:underline">Rigoberto´s</a>. All Rights Reserved.</span>
+      </div>
+    </footer>
+  </body>
+</html>

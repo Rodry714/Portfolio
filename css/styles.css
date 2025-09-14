@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #ffff;
+  --text-light: #ffff;
+  --extra-light: #020024;
+  --max-width: 1200px;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Scroll behavior for smooth navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #020017;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+.section {
+  background-color: var(--extra-light);
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.action__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.action__btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hire__me {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.hire__me:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.portfolio-home {
+  color: var(--primary-color);
+}
+
+.portfolio-home:hover {
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+width: min(100rem, 90%);
+border-radius: 10%;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color: #191c32;
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: aqua;
+  margin-top: 5px;
+  margin-bottom: 2em;
+}
+
+.about p {
+  margin-bottom: 1em;
+}
+
+.portfolio,
+.contact-section {
+  width: 100vw;
+  background-color: #020017;
+  color: #fff;
+}
+
+.portfolio-heading {
+  text-align: center;
+  padding: 4rem 0 4rem 0;
+}
+
+.portfolio .container {
+  height: 60vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.padding-e {
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.max-w-xs,
+.max-w-sm {
+  width: 320px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Centrar los botones de tabs y darles espacio sin desbordar */
+.cards > .flex {
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1.5rem !important;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Centrar el contenido de las cards internas */
+.cards .container,
+.cards .experiencia,
+.cards .skills,
+.cards .tab-content {
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tab-buttons-responsive {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tab-buttons-responsive button {
+  min-width: 220px;
+  margin-bottom: 0;
+}
+
+/* iPad y móvil: dos botones por fila */
+@media (max-width: 1024px) {
+  .tab-buttons-responsive button {
+    flex: 1 1 45%;
+    margin-bottom: 1rem;
+    max-width: 48%;
+  }
+}
+
+/* iPad landscape: 2 cards on top, 1 below (for 3 cards) */
+@media (min-width: 750px) and (max-width: 1024px) {
+  /* Experiencia Laborales cards */
+  #experiencias .experiencia,
+  #certificaciones .skills {
+    flex-wrap: wrap;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  #experiencias .experiencia > .padding-e,
+  #certificaciones .skills > .padding-e {
+    flex: 0 1 45%;
+    max-width: 45%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  #experiencias .experiencia > .padding-e:nth-child(3),
+  #certificaciones .skills > .padding-e:nth-child(3) {
+    flex-basis: 94%;
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (width < 750px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
+
+  .experiencia {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-gif {
+    display: none !important;
+  }
+  .main-foto {
+    display: block !important;
+    width: min(100rem, 90%);
+    border-radius: 10%;
+  }
+}
+
+@media (min-width: 750px) {
+  .content {
+    padding-left: 40px;
+  }
+}
+
+.button {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #1c89ff;
+  border: solid 1px #1c89ff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  overflow: hidden;
+}
+.button:hover {
+  background-color: #fff;
+  color: #1c89ff;
+  border-color: #1c89ff;
+  transition: all .1s ease-in-out;
+}
+.button .btn-text {
+  position: relative;
+  z-index: 2;
+}
+.button .loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  position: absolute;
+  left: calc(50% - 18px);
+  top: 0;
+  border: solid 2px #424242;
+  border-top: solid 2px #1c89ff;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+.button .loader.active {
+  animation: loading 2s ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+.button .check {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(-4px,50px,0);
+  opacity: 0;
+}
+.button .check.active {
+  opacity: 1;
+  transform: translate3d(-4px,4px,0);
+  transition: all .5s cubic-bezier(.49, 1.74, .38, 1.74);
+  transition-delay: .2s;
+}
+.button .check-one {
+  display: block;
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+.button .check-two {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(-45deg) translate3d(14px, -4px, 0);
+  transform-origin: 100%;
+}
+@keyframes loading {
+  30% {
+    opacity:1;
+  }
+  85% {
+    opacity:1;
+    transform: rotate(1080deg);
+    border-color: #262626;
+  }
+  100% {
+    opacity:1;
+    transform: rotate(1080deg);
+    border-color: #1c89ff;
+  }
+}
+
