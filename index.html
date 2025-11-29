@@ -13,48 +13,22 @@
       crossorigin="anonymous"
 />
     <link rel="stylesheet" href="css/styles.css" />
-    <style>
-      html, body {
-        width: 100%;
-        max-width: 100vw;
-        overflow-x: hidden;
-      }
-      body {
-        box-sizing: border-box;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      /* Ajuste para evitar desbordamiento en contenedores principales */
-      .section__container,
-      .container,
-      .about,
-      .portfolio,
-      .contact-section,
-      .cards {
-        width: 100%;
-        max-width: 100vw;
-        margin: 0 auto;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-      }
-    </style>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Rigoberto´s Portfolio</title>
   </head>
   <body>
     <nav>
       <div class="nav__content">
-        <div class="logo"><a href="#">Rigoberto</a></div>
+        <div class="logo"><a href="#home">Rigoberto</a></div>
         <label for="check" class="checkbox">
           <i class="ri-menu-line"></i>
         </label>
         <input type="checkbox" name="check" id="check" />
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Acerca de mi</a></li>
-          <li><a href="#experiencia">Experiencia y habilidades</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li class=" transition-transform duration-300 transform hover:scale-105"><a href="#home">Home</a></li>
+          <li class=" transition-transform duration-300 transform hover:scale-105"><a href="#about">Acerca de mi</a></li>
+          <li class=" transition-transform duration-300 transform hover:scale-105"><a href="#experiencia">Experiencia y habilidades</a></li>
+          <li class=" transition-transform duration-300 transform hover:scale-105"><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
     </nav>
@@ -69,18 +43,73 @@
             ¡Hola toditos y bienvenidos a mi portafolio! Aquí encontrarás un resumen de mis experiencias y habilidades que me convierten en un elemento valioso para tu empresa o proyecto. Soy un apasionado de la tecnología, con gran interés en aprender y crecer constantemente. Me caracteriza la capacidad de construir relaciones interpersonales sólidas y aportar al trabajo en equipo, siempre priorizando la comunicación como la base para alcanzar grandes resultados.
           </p>
           <div class="action__btns">
-            <button class="hire__me">Contacto</button>
-            <button class="portfolio-home">Curriculum</button>
-          </div>
-        </div>
+            <a href="https://wa.me/50375683732" 
+            class="hire__me text-lg bg-gray-800 text-gray-300 font-semibold hover:bg-purple-600 transition transition-transform duration-300 transform hover:scale-105 hover:shadow-xl inline-block text-center ">Contacto</a>
+            <a href="https://www.linkedin.com/in/rigoberto-marroquin-87a697258/" class="portfolio-home text-lg bg-gray-800 text-gray-300 font-semibold hover:bg-purple-600 transition transition-transform duration-300 transform hover:scale-105 hover:shadow-xl inline-block text-center ">Curriculum</a>
+</div>
+          
+<!-- ICONOS REDES SOCIALES -->
+<div class="icons flex mt-4">
+  <!-- Icono 1 -->
+<div class="p-2 transition-all duration-[150ms] transform hover:scale-115">
+  <a href="https://www.linkedin.com/in/rigoberto-marroquin-87a697258/" target="_blank">
+  <svg class="w-9 h-9 text-gray-800 dark:text-white hover:text-[#9333ea] transition-colors duration-[100ms]" 
+       aria-hidden="true" 
+       xmlns="http://www.w3.org/2000/svg" 
+       fill="currentColor" 
+       viewBox="0 0 24 24">
+    <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/>
+    <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+  </svg>
+  </a>
+</div>
+<!-- Icono 2 -->
+<div class="p-2 transition-all duration-[150ms] transform hover:scale-115">
+  <a href="https://github.com/Rodry714" target="_blank">
+  <svg class="w-9 h-9 text-gray-800 dark:text-white hover:text-[#9333ea] transition-colors duration-[100ms]"
+       aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+    <path fill-rule="evenodd"
+          d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+          clip-rule="evenodd" />
+  </svg>
+  </a>  
+</div>
+<!-- Icono 3 -->
+<div class="p-2 transition-all duration-[150ms] transform hover:scale-115">
+  <a href="https://wa.me/50375683732" target="_blank">
+  <svg class="w-9 h-9 text-gray-800 dark:text-white hover:text-[#9333ea] transition-colors duration-[100ms]"
+       aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path fill="currentColor" fill-rule="evenodd"
+          d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
+          clip-rule="evenodd" />
+    <path fill="currentColor"
+          d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z" />
+  </svg>
+  </a>
+</div>
+<!-- Icono 4 -->
+<div class="p-2 transition-all duration-[150ms] transform hover:scale-115">
+  <a href="https://www.instagram.com/itz.rigobertkm/" target="_blank">
+  <svg class="w-9 h-9 text-gray-800 dark:text-white hover:text-[#9333ea] transition-colors duration-[100ms]"
+       aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path fill="currentColor" fill-rule="evenodd"
+          d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+          clip-rule="evenodd" />
+  </svg>
+</a>
+</div>
+</div>
+ </div>
         <div class="image">
           <img src="assets/Coding.gif" alt="profile" class="main-gif" />
           <img src="assets/foto.png" alt="profile" class="main-foto" style="display: none;" />
         </div>
       </div>
     </section>
+
+    <!-- ABOUT ME SECTION -->
     <section id="about" class="about">
-      <img src="assets/foto.png" alt="">
+      <img src="assets/foto.png" alt="Foto de perfil">
       <div class="about-info">
         <h2>Un poco sobre mi</h2>
         <div class="divider"></div>
@@ -91,22 +120,22 @@
     <section id="experiencia" class="cards" style="background-color: #191c32; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 4rem; padding-bottom: 4rem;">
       <div class="flex justify-center mb-12 pb-8 gap-4 tab-buttons-responsive" style="flex-wrap: wrap;">
         <button onclick="showTab('experiencias')" id="tab-experiencias"
-          class="px-7 py-4 text-lg bg-purple-700 text-white font-semibold hover:bg-purple-600 transition"
+          class="px-7 py-4 text-lg bg-gray-800 text-gray-300 font-semibold hover:bg-purple-600 transition transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
           style="border-radius: 20px; transform: scale();">
           Experiencias Laborales
         </button>
         <button onclick="showTab('certificaciones')" id="tab-certificaciones"
-          class="px-7 py-4 text-lg bg-gray-800 text-gray-300 font-semibold hover:bg-purple-600 transition"
+          class="px-7 py-4 text-lg bg-gray-800 text-gray-300 font-semibold hover:bg-purple-600 transition transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
           style="border-radius: 20px; transform: scale();">
           Certificaciones
         </button>
         <button onclick="showTab('habilidades')" id="tab-habilidades"
-          class="px-7 py-4 text-lg bg-gray-800 text-gray-300 font-semibold hover:bg-purple-600 transition"
+          class="ppx-7 py-4 text-lg bg-gray-800 text-gray-300 font-semibold hover:bg-purple-600 transition transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
           style="border-radius: 20px; transform: scale();">
           Habilidades
         </button>
         <button onclick="showTab('logros')" id="tab-logros"
-          class="px-7 py-4 text-lg bg-gray-800 text-gray-300 font-semibold hover:bg-purple-600 transition"
+          class="ppx-7 py-4 text-lg bg-gray-800 text-gray-300 font-semibold hover:bg-purple-600 transition transition-transform duration-300 transform hover:scale-105 hover:shadow-xl "
           style="border-radius: 20px; transform: scale();">
           Logros
         </button>
@@ -118,21 +147,28 @@
           <!-- Card Ejemplo -->
           <div class="container">
               <div class="experiencia" style="display: flex;">
+                <!-- Card 1  Siman-->
                 <div class="padding-e">
-                  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
-                      <img class="rounded-t-lg" src="assets/siman.webp" alt="" />
+                  <div class="max-w-xs mx-auto transition-transform duration-300 transform bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:scale-105 hover:shadow-xl">
+                     <a href="#">
+                    <img class="rounded-t-lg" src="assets/siman.webp" alt="Siman Logo" />
+                  </a>
+                  <div class="p-5 w-58 mx-auto">
+               <a href="https://www.siman.com/">
+                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        Siman / Vendedor
+                      </h5>
                     </a>
-                    <div class="p-5 w-58 mx-auto">
-                      <a href="https://www.siman.com/">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Siman / Vendedor</h5>
-                      </a>
-                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Colaborador en tallaje de calzado, atención personalizada al cliente, seguimiento de facturas, redacción de borradores y cumplimiento de metas <br> 13 Nov 23 - 31 May 25</p>
-                    </div>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                      Colaborador en tallaje de calzado, atención personalizada al cliente, seguimiento de facturas, redacción de borradores y cumplimiento de metas <br />
+                      13 Nov 23 - 31 May 25
+                    </p>
                   </div>
                 </div>
+              </div>
+              <!-- Card 2 Concentrix-->
                 <div class="padding-e">
-                  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                  <div class="max-w-xs mx-auto transition-transform duration-300 transform bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:scale-105 hover:shadow-xl">
                     <a href="#">
                       <img class="rounded-t-lg" src="assets/concentrix.png" alt="" />
                     </a>
@@ -140,12 +176,14 @@
                       <a href="https://www.concentrix.com/">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Servicio al cliente / JetBlue</h5>
                       </a>
-                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Me encuentraba al servicio del cliente de la grandiosa aerolinea aerea de jetBlue como servicio al cliente bilingüe ,mi rol como crewmember es solventar las dudas que puedan presentarse ,siendo de gran aporte para los clientes sobre sus intereses <br> 03 jun 24 - 07 sept 24. </p>
+                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Me encuentraba al servicio del cliente de la grandiosa aerolinea aerea de jetBlue como servicio al cliente bilingüe ,mi rol como crewmember es solventar las dudas que puedan presentarse ,siendo de gran aporte para los clientes sobre sus intereses <br> 03 jun 24 - 07 sept 24. <br><br></p>
                     </div>
                   </div>
                 </div>
+
+                <!-- Card 3 Telus-->
                 <div class="padding-e">
-                  <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                  <div class="max-w-xs mx-auto transition-transform duration-300 transform bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:scale-105 hover:shadow-xl">
                     <a href="#">
                       <img class="rounded-t-lg" src="assets/telus.png" alt="" />
                     </a>
@@ -153,7 +191,7 @@
                       <a href="#">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Servicio al cliente y Moderador de contenido</h5>
                       </a>
-                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Actualmente trabajo en moderación de entornos en línea, fomentando comunidades saludables, seguras y productivas. Mi labor consiste en aplicar pautas claras, proteger a los usuarios y promover la colaboración. Ha sido la mejor experiencia laboral que he tenido. <br> 09 sept 24 - Actualidad.</p>
+                      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Actualmente trabajo en moderación de entornos en línea, fomentando comunidades saludables, seguras y productivas. Mi labor consiste en aplicar pautas claras, proteger a los usuarios y promover la colaboración. Ha sido la mejor experiencia laboral que he tenido. <br> 09 sept 24 - Actualidad. <br><br><br></p>
                     </div>
                   </div>
                 </div>
@@ -165,21 +203,21 @@
           <div class="container skills-principal">
               <div class="skills" style="display: flex;">
                 <div class="padding-e">
-                  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 ">
+                  <div class="max-w-xs mx-auto transition-transform duration-300 transform bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:scale-105 hover:shadow-xl">
                     <a href="#">
                       <img class="rounded-t-lg w-80 mx-auto" src="assets/ITS.png" alt="" />
                     </a>
                   </div>
                 </div>
                 <div class="padding-e">
-                  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700" >
+                  <div class="max-w-xs mx-auto transition-transform duration-300 transform bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:scale-105 hover:shadow-xl" >
                     <a href="#">
                       <img class="rounded-t-lg  w-60 mx-auto" src="assets/mos.png" alt="" />
                     </a>
                   </div>
                 </div>
                 <div class="padding-e">
-                  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                  <div class="max-w-xs mx-auto transition-transform duration-300 transform bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:scale-105 hover:shadow-xl">
                     <a href="#">
                       <img class="rounded-t-lg w-90 mx-auto" src="assets/TOEIC.webp" alt="" />
                     </a>
@@ -194,6 +232,7 @@
           <!-- Grid de Skills -->
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
             <!-- Card Skill -->
+            <!-- Frontend -->
             <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="w-12 mx-auto">
               <p class="mt-4 text-lg font-semibold text-purple-200">HTML</p>
@@ -218,6 +257,46 @@
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue" class="w-12 mx-auto">
               <p class="mt-4 text-lg font-semibold text-purple-200">Vue</p>
             </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">             
+  <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" class="w-12 mx-auto">
+  <p class="mt-4 text-lg font-semibold text-purple-200">React</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+              <img src="https://cdn-icons-png.flaticon.com/512/5969/5969059.png" alt="Vite" class="w-12 mx-auto">
+              <p class="mt-4 text-lg font-semibold text-purple-200">Vite</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">             
+  <img src="https://cdn-icons-png.flaticon.com/512/3523/3523063.png" alt="Axios" class="w-12 mx-auto">
+  <p class="mt-4 text-lg font-semibold text-purple-200">Axios</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">             
+  <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="React Router" class="w-12 mx-auto">
+  <p class="mt-4 text-lg font-semibold text-purple-200">React Router</p>
+            </div>
+
+            <!-- Backend -->
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+  <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node.js" class="w-12 mx-auto">
+  <p class="mt-4 text-lg font-semibold text-purple-200">Node.js</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+  <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="Express" class="w-12 mx-auto">
+  <p class="mt-4 text-lg font-semibold text-purple-200">Express</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+  <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="JWT" class="w-12 mx-auto">
+  <p class="mt-4 text-lg font-semibold text-purple-200">JWT</p>
+            </div>
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+  <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="bcryptjs" class="w-12 mx-auto">
+  <p class="mt-4 text-lg font-semibold text-purple-200">bcryptjs</p>
+            </div>
+
+            <!-- Bases de datos  -->
+            <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
+  <img src="https://cdn-icons-png.flaticon.com/512/528/528260.png" alt="MySQL" class="w-12 mx-auto">
+  <p class="mt-4 text-lg font-semibold text-purple-200">MySQL</p>
+            </div>
             <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-12 mx-auto">
               <p class="mt-4 text-lg font-semibold text-purple-200">GitHub</p>
@@ -230,22 +309,18 @@
               <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="w-10 mx-auto">
               <p class="mt-4 text-lg font-semibold text-purple-200">Figma</p>
             </div>
-            <!-- Laravel -->
             <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
               <img src="assets/laravel_logo_icon_170314.svg" alt="Laravel" class="w-28 mx-auto">
               <p class="mt-4 text-lg font-semibold text-purple-200">Laravel</p>
             </div>
-            <!-- Team Work -->
             <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
               <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Team Work" class="w-12 mx-auto">
               <p class="mt-4 text-lg font-semibold text-purple-200">Trabajo en equipo</p>
             </div>
-            <!-- Liderazgo -->
             <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
               <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Liderazgo" class="w-12 mx-auto">
               <p class="mt-4 text-lg font-semibold text-purple-200">Liderazgo</p>
             </div>
-            <!-- Solucionador de Problemas -->
             <div class="bg-purple-800/40 p-6 rounded-xl shadow-lg shadow-purple-900 hover:bg-purple-700/60 hover:shadow-purple-500/50 hover:scale-105 transition-transform">
               <img src="https://cdn-icons-png.flaticon.com/512/3534/3534060.png" alt="Problem Solving" class="w-12 mx-auto">
               <p class="mt-4 text-lg font-semibold text-purple-200">Solucionador de Problemas</p>
@@ -255,7 +330,7 @@
       </div>
       <div id="logros" class="tab-content hidden flex justify-center items-center w-full h-full" style="min-height: 400px;">
         <div class="padding-e">
-          <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700" style="margin: 0 auto;">
+          <div class="max-w-xs mx-auto transition-transform duration-300 transform bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 hover:scale-105 hover:shadow-xl" style="margin: 0 auto;">
             <a href="https://www.laprensagrafica.com/economia/Estudiantes-de-Superate-incursionan-en-la-programacion-20231119-0048.html" target="_blank">
               <img class="rounded-t-lg" src="https://www.laprensagrafica.com/__export/1700450800741/sites/prensagrafica/img/2023/11/19/20231119_082830387_fecm16112023coradelan03.jpg_554688467.jpg" alt="Logro" style="width: 320px; height: 240px; object-fit: cover;"/>
             </a>
@@ -286,6 +361,31 @@
         document.getElementById("tab-" + tabId).classList.add('bg-purple-700', 'text-white');
         document.getElementById("tab-" + tabId).classList.remove('bg-gray-800', 'text-gray-300');
       }
+    </script>
+
+    <script>
+      // Smooth scroll for nav and footer links and close mobile menu
+      (function() {
+        const links = document.querySelectorAll('nav a[href^="#"], footer a[href^="#"]');
+        const checkbox = document.getElementById('check');
+
+        links.forEach(link => {
+          link.addEventListener('click', function(e) {
+            const hash = this.getAttribute('href');
+            if (!hash || hash === '#') return; // ignore empty anchors
+            const target = document.querySelector(hash);
+            if (!target) return;
+
+            e.preventDefault();
+            // Native smooth scroll is enabled via CSS; this ensures consistent behavior
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Close mobile menu if open
+            if (checkbox) checkbox.checked = false;
+            // Update URL hash without jumping
+            if (history.pushState) history.pushState(null, '', hash);
+          }, { passive: false });
+        });
+      })();
     </script>
 
 
@@ -371,18 +471,18 @@
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
           <a href="#home" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Rigoberto</span>
           </a>
           <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-            <li><a href="#home" class="hover:underline me-4 md:me-6">Home</a></li>
-            <li><a href="#about" class="hover:underline me-4 md:me-6">Acerca de mi</a></li>
-            <li><a href="#experiencia" class="hover:underline me-4 md:me-6">Experiencia y habilidades</a></li>
-            <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+            <li class=" transition-transform duration-300 transform hover:scale-105"><a href="#home" class="hover:underline me-4 md:me-6">Home</a></li>
+            <li class=" transition-transform duration-300 transform hover:scale-105"><a href="#about" class="hover:underline me-4 md:me-6">Acerca de mi</a></li>
+            
+            <li class=" transition-transform duration-300 transform hover:scale-105"><a href="#experiencia" class="hover:underline me-4 md:me-6">Experiencia y habilidades</a></li>
+            <li class=" transition-transform duration-300 transform hover:scale-105"><a href="#contacto" class="hover:underline">Contacto</a></li>
           </ul>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://flowbite.com/" class="hover:underline">Rigoberto´s</a>. All Rights Reserved.</span>
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://www.linkedin.com/in/rigoberto-marroquin-87a697258/" class="hover:underline">Rigoberto´s</a>. All Rights Reserved.</span>
       </div>
     </footer>
   </body>
